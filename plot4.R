@@ -23,9 +23,9 @@ with(elec.data, plot(Time, Global_active_power, type="l",
 with(elec.data, plot(Time, Voltage, type="l",
                      ylab="Voltage",
                      xlab="datetime"))
-plot(mydata$Time, mydata$Sub_metering_1, type="l", ylab="Energy sub metering", xlab="")
-lines(mydata$Time, mydata$Sub_metering_2, type="l", col="red")
-lines(mydata$Time, mydata$Sub_metering_3, type="l", col="blue")
+plot(elec.data$Time, elec.data$Sub_metering_1, type="l", ylab="Energy sub metering", xlab="")
+lines(elec.data$Time, elec.data$Sub_metering_2, type="l", col="red")
+lines(elec.data$Time, elec.data$Sub_metering_3, type="l", col="blue")
 with(elec.data, plot(Time,Sub_metering_1, 
                      type = "l", xlab = "",
                      ylab= "Energy sub metering"))
